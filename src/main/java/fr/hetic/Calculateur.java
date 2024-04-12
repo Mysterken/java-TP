@@ -1,8 +1,10 @@
+package fr.hetic;
+
 import java.util.Map;
 import java.util.function.BinaryOperator;
 
 public class Calculateur {
-    private static final Map<String, BinaryOperator<Float>> operations = Map.of(
+    static final Map<String, BinaryOperator<Float>> operations = Map.of(
             "+", (a, b) -> a + b,
             "-", (a, b) -> a - b,
             "*", (a, b) -> a * b
